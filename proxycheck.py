@@ -6,7 +6,7 @@ import gtk
 import os
 
 username="cs1120238"
-password="nikhil00-"
+password="yourpassword"
 frequency=15*60*1000  #15 minutes
 iconPath='/home/nikhil/Desktop/icon.png'   #set path to your own icon
 
