@@ -5,10 +5,10 @@ import pynotify
 import gtk
 import os
 
-username="cs1120238"
+username="yourusername"
 password="yourpassword"
 frequency=15*60*1000  #15 minutes
-iconPath='/home/nikhil/Desktop/icon.png'   #set path to your own icon
+iconPath='/Path/to/icon'   #set path to your own icon
 
 
 a = appindicator.Indicator('tubecheck', iconPath, appindicator.CATEGORY_APPLICATION_STATUS)
