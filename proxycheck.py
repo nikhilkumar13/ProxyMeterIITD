@@ -24,7 +24,7 @@ a.set_menu(m)
 ch.show()
 qi.show()
 def getData(username,password):
-	command= 'curl -k -d'+ '"uid='+username+'&magic_word='+password+'&1=Proxy Usage "'+' '+qualifiedURL+ ' | sed -n "35,35p;35q"'+'| grep -o "[1-9]\S*[Gb|mb]"'
+	command= 'curl -k -d'+ '"uid='+username+'" --data-urlencode "magic_word='+password+'"'+' '+qualifiedURL+ ' | sed -n "35,35p;35q"'+'| grep -o "[1-9]\S*[Gb|mb]"'
 	p=os.popen(command,"r")
 	data=p.readline()
 	return  data.strip()
